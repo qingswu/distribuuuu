@@ -289,7 +289,7 @@ def _densenet(
     num_init_features: int,
     pretrained: bool,
     progress: bool,
-    **kwargs: Any
+    **kwargs: Any,
 ) -> DenseNet:
     model = DenseNet(growth_rate, block_config, num_init_features, **kwargs)
     if pretrained:

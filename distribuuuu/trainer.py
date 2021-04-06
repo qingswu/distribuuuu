@@ -165,7 +165,7 @@ def test_model():
     rank = int(os.environ["RANK"])
     local_rank = int(os.environ["LOCAL_RANK"])
     device = torch.device("cuda", local_rank)
-    
+
     utils.setup_logger(rank, local_rank)
 
     net = models.build_model(arch=cfg.MODEL.ARCH, pretrained=cfg.MODEL.PRETRAINED)
